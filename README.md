@@ -88,9 +88,6 @@ To run this project on your local system, please ensure you have the following p
 
 1. Clone the project repository to your local machine using the following command:
 
-```bash
-  git clone https://github.com/Pranav-Programmer/Face-Recognition-Advance-Attendance-System
-```
 2. Open Visual Studio Code or any other Python IDE of your choice.
 
 3. Set up the Python environment for the project using Anaconda or your preferred method.
@@ -127,13 +124,9 @@ Before getting started, make sure you have the following:
 
 2. The system homepage will be displayed, showing the menu options on the sidebar.
 
->![A1](https://user-images.githubusercontent.com/79044490/194722506-7c676ba1-8d40-467f-bba4-2db21e9332de.png)
-
 ### Step 2: Register Yourself
 
 Without registration the system will not recognize you.
-
-![A3](https://user-images.githubusercontent.com/79044490/194722566-dd276a5a-7c82-45d7-97dd-687259213e00.png)
 
 1. Click on the "REGISTER" option in the sidebar menu.
 
@@ -145,7 +138,6 @@ Without registration the system will not recognize you.
 
 5. Wait for the system to process the image and confirm the registration.
 
-![A4](https://user-images.githubusercontent.com/79044490/194722583-1f1c2181-f1af-48f4-ae66-a9f1c0adae39.png)
 
 ### Step 3: Mark Your Attendance
 1. Click on the "MARK ATTENDANCE" option in the sidebar menu.
@@ -162,15 +154,11 @@ Without registration the system will not recognize you.
 
 7. Once the attendance is marked, you can close the webcam window.
 
-![A2](https://user-images.githubusercontent.com/79044490/194722538-0c93231f-8284-41d4-adaa-7b7ebcace883.png)
-
 ### Step 4: View Attendance Sheet
 1. Click on the "ATTENDANCE SHEET" option in the sidebar menu.
 
 2. The attendance sheet will be displayed, showing the names and timestamps of individuals' attendance.
 
 3. You can view the attendance sheet for your reference.
-
-![A5](https://user-images.githubusercontent.com/79044490/194722590-08611b50-af90-4bd0-8607-d6a3df330ff8.png)
 
 Congratulations! You have successfully used the Face Recognition Advance Attendance System to register yourself and mark your attendance. Repeat the process whenever you need to mark your attendance in the future.
