@@ -1,4 +1,5 @@
 # Face-detection-attendance
+
 # Face Recognition Advance Attendance System
 
 This project is a face recognition-based attendance system developed using Python and Streamlit. It provides an efficient and automated way to mark attendance by recognizing individuals' faces in real-time.
