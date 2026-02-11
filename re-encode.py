@@ -1,7 +1,6 @@
 import face_recognition
 import os
 import pickle
-import sys
 
 EMPLOYEES_FOLDER = "employees/"
 DATABASE_FILE = "encodings.pickle"
