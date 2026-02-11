@@ -101,8 +101,15 @@ To run this project on your local system, please ensure you have the following p
 5. Launch the application by running the following command in the terminal:
 
 ```bash
-  streamlit run Attendance_System.py
+  streamlit run test.py
 ```
+
+or 
+
+```bash
+ python3 test.py
+```
+
 
 6. Open your web browser and go to the provided local URL to access the application.
 
