@@ -7,7 +7,7 @@ import time
 import os
 import sys
 
-# --- НАСТРОЙКИ ---
+# НАСТРОЙКИ ПОДКЛЮЧЕНИЯ К КАМЕРЕ
 RTSP_URL = "rtsp://admin:Admin123@172.30.42.242:554/Streaming/Channels/101"
 DATABASE_FILE = "encodings.pickle"
 
@@ -90,7 +90,7 @@ def main():
     vs = VideoStream(RTSP_URL).start()
     time.sleep(2.0)
 
-    # Запускаем распознавание в фоне
+    # Запуск распознавания в фоне
     threading.Thread(target=face_recognition_thread, args=(vs, data), daemon=True).start()
 
     print(f"[INFO] Crystal Clear Mode: {vs.width}x{vs.height}")
