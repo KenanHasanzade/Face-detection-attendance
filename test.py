@@ -7,7 +7,7 @@ import time
 import os
 import sys
 
-# --- НАСТРОЙКИ ---
+# НАСТРОЙКИ ПОДКЛЮЧЕНИЯ К КАМЕРЕ
 RTSP_URL = "rtsp://admin:Admin123@172.30.42.242:554/Streaming/Channels/101"
 DATABASE_FILE = "encodings.pickle"
 
@@ -90,7 +90,7 @@ def main():
     vs = VideoStream(RTSP_URL).start()
     time.sleep(2.0)
 
-    # Запускаем распознавание в фоне
+    # Запуск распознавания в фоне
     threading.Thread(target=face_recognition_thread, args=(vs, data), daemon=True).start()
 
     print(f"[INFO] Crystal Clear Mode: {vs.width}x{vs.height}")
@@ -117,7 +117,7 @@ def main():
             cv2.putText(frame, name, (l, t - 10), 
                         cv2.FONT_HERSHEY_SIMPLEX, vs.width/1500, color, thickness)
 
-        # Расчет FPS
+        # Рассчет и вывод FPS на экран
         curr_time = time.time()
         fps = 1 / (curr_time - prev_frame_time)
         prev_frame_time = curr_time
@@ -126,7 +126,7 @@ def main():
         cv2.putText(frame, f"FPS: {int(fps)} | Res: {vs.width}x{vs.height}", (30, 50), 
                     cv2.FONT_HERSHEY_SIMPLEX, vs.width/1200, (0, 255, 0), 2)
 
-        # ПОКАЗЫВАЕМ ОРИГИНАЛ (без cv2.resize)
+        # ПОКАЗ ОРИГИНАЛА(без cv2.resize)
         cv2.imshow("Jetson High Quality", frame)
         
         if cv2.waitKey(1) & 0xFF == ord('q'): 
